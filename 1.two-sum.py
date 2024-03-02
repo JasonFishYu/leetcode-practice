@@ -12,6 +12,26 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        n = len(nums)
+        result = []
+        left,right = 0, n -1 
+        while left < n-1:
+            if nums[left] + nums[right] == target:
+                result.append(left)
+                result.append(right)
+                break
+            if right > left:
+                right -= 1
+            if right == left:
+                left += 1
+                right = n-1
+        return result
+            
+            
+            
+        
+        
+        
         
 # @lc code=end
 
