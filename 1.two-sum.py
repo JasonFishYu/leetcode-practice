@@ -27,11 +27,6 @@ class Solution(object):
                 right = n-1
         return result
             
-            
-            
-        
-        
-        
         
 # @lc code=end
 
